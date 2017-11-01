@@ -41,11 +41,7 @@ const rollUpPlugins = [
 ]
 
 if (params.report) {
-  rollUpPlugins.push(
-    rollUpSizes({
-      report: require('../../utils/rollup-size-reporter'),
-    })
-  )
+  rollUpPlugins.push(rollUpSizes())
 }
 
 module.exports = {
